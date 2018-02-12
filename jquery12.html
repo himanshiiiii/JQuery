@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<div id="parent">
+    <a href="#" style="text-decoration:none">Click me</a>
+    <div id="child">
+        <button>Click Me</button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#parent a").on("click",function(){
+            alert('Clicked the Link');
+
+
+        });
+
+        $("button").click(function(){
+            $("#parent a").off("click");
+            alert('Stopped the Link.');
+
+
+
+
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function getval(sel)
+    {
+        $('.container').append(sel.value," ");
+    }
+</script>
+<select onchange="getval(this);">
+    <option value="Mercedes">Mercedes</option>
+    <option value="Jaguar">Jaguar</option>
+</select>
+<div class="container">
+    <p> The Selected Car is </p>
+</div>
+</body>
+</html>

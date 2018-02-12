@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $("#b").bind("click",function(el)
+    {
+        alert("Paragraph is clicked"),
+        $("#b").append("click"," ")
+    });
+});
+</script>
+
+<p id="b">
+    Click Me!
+</p>
+</body>
+</html>

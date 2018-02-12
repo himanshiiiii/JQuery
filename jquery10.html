@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+    </script>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+        <li><a href="#">Cars</a>
+        <ul class="dropdown-menu" style="display:none;">
+        <li><a href="#">Audi</a></li>
+    <li><a href="#">Jaguar</a></li>
+    <li><a href="#">BMW</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#menu li").hover(function(){
+            $(".dropdown-menu", this).slideDown(100);
+        }, function(){
+            $(".dropdown-menu", this).stop().slideUp(100);
+        });
+    });
+
+</script>
+</body>
+</html>
